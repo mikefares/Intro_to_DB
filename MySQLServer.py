@@ -13,7 +13,7 @@ try:
 
     print("Databasae 'alx_book_Store' created successfully!")
 
-except:
+except mysql.connector.Error:
     print("Cannot connect to database. Enter correct credentials")
 
 finally:
