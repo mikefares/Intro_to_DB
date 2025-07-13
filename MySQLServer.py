@@ -9,9 +9,7 @@ try:
 
     myCursor = mydb.cursor()
 
-    myCursor.execute("DROP DATABASE alx_book_Store")
-
-    myCursor.execute("CREATE DATABASE alx_book_store")
+    myCursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
     print("Databasae 'alx_book_Store' created successfully!")
 
